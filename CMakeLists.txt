@@ -14,10 +14,6 @@ find_package(SDL2 REQUIRED SDL2)
 include_directories(PUBLIC ${SDL2_INCLUDE_DIRS})
 target_include_directories(lvgl PUBLIC ${SDL2_INCLUDE_DIRS})
 
-# smooth ui toolkit
-set(SMOOTH_UI_TOOLKIT_BUILD_EXAMPLE OFF)
-add_subdirectory(dependencies/smooth_ui_toolkit)
-
 add_executable(lvgl_cpp_simulator main.cpp)
 
 target_link_libraries(lvgl_cpp_simulator PUBLIC 
@@ -25,5 +21,4 @@ target_link_libraries(lvgl_cpp_simulator PUBLIC
     lvgl_examples
     lvgl_demos
     ${SDL2_LIBRARIES}
-    smooth_ui_toolkit
 )
