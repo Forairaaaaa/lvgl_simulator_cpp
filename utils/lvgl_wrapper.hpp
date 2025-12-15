@@ -33,8 +33,6 @@ inline void create_window(int width, int height)
     auto keyboard = lv_sdl_keyboard_create();
     lv_indev_set_display(keyboard, display);
     lv_indev_set_group(keyboard, lv_group_get_default());
-
-    lv_obj_set_scroll_dir(lv_screen_active(), LV_DIR_NONE);
 }
 
 inline void update_window()

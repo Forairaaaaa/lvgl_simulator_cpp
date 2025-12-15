@@ -8,7 +8,7 @@
 ## 拉取依赖：
 
 ```bash
-python ./fetch_repos.py
+python3 ./fetch_repos.py
 ```
 
 ## 编译：
